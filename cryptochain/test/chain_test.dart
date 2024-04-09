@@ -16,14 +16,14 @@ void main() {
       expect(isEthChainOrSideChainToken('abc_eth'), true);
     });
 
-    // test('Invalid ETH chain or side chain tokens', () {
-    //   expect(isEthChainOrSideChainToken('btc'), false);
-    //   expect(isEthChainOrSideChainToken('usdt'), false);
-    //   expect(isEthChainOrSideChainToken('123_eth'), false);
-    //   expect(isEthChainOrSideChainToken('ethereum'), false);
-    //   expect(isEthChainOrSideChainToken('eth_'), false);
-    //   expect(isEthChainOrSideChainToken('ethmatic'), false);
-    //   expect(isEthChainOrSideChainToken('matic_eth'), false);
-    // });
+    test('Invalid ETH chain or side chain tokens', () {
+      expect(isEthChainOrSideChainToken('btc'), false);
+      expect(isEthChainOrSideChainToken('usdt'), false);
+      expect(isEthChainOrSideChainToken('123_eth'), false);
+      expect(isEthChainOrSideChainToken('ethereum'), false);
+      expect(isEthChainOrSideChainToken('eth_'), false);
+      expect(isEthChainOrSideChainToken('ethmatic'), false);
+      expect(isEthChainOrSideChainToken('matic_eth'), false);
+    });
   });
 }
