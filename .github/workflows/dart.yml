@@ -22,7 +22,9 @@ jobs:
           flutter-version: '3.7.7'
 
       - name: Install dependencies
+        working-directory: ${{ github.workspace }}
         run: flutter pub get
 
       - name: Run Flutter Test
+        working-directory: ${{ github.workspace }}
         run: flutter test
