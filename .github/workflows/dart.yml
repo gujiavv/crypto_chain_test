@@ -2,7 +2,9 @@ name: Flutter Test
 on:
   push:
     branches:
-      - main
+      - "main"
+      - "version/*"
+      - "feature/*"
 
   workflow_dispatch:
 
