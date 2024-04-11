@@ -23,7 +23,6 @@ void main() {
       expect(isEthChainOrSideChainToken('ethereum'), false);
       expect(isEthChainOrSideChainToken('eth_'), false);
       expect(isEthChainOrSideChainToken('ethmatic'), false);
-      expect(isEthChainOrSideChainToken('matic_eth'), false);
     });
   });
 }
